@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,570;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap");
+
+body {
+  background: linear-gradient(45deg, #3479a7 20%, #230763 80%);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  background: #d9f4ff;
+  color: #2e2b22;
+  margin: 64px;
+  border-radius: 13px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 50px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 300px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px #25456b;
+}
+
+.titulo {
+  margin-left: 30px;
+}
+
+.tema button {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-weight: 550;
+  font-size: 15px;
+  color: #62afcc;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #d9f4ff;
+  border-color: #62afcc;
+}
+
+.tema button:hover {
+  cursor: pointer;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  background-color: #9977e6;
+  box-shadow: 0px 4px 4px #25456b;
+  border-radius: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.serif {
+  font-family: "Volkorn", serif;
+  font-weight: 550;
+}
+
+.titulo-projetos {
+  font-family: "Raleway", sans-serif;
+  font-weight: 570;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+a:link {
+  color: #230763;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #230763;
+  text-decoration: none;
+}
+
+.collapsible {
+  background-color: #e8e6eb;
+  color: #230763;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  padding: 8px 14px;
+  border-style: solid;
+  border-color: #ddceed;
+  border-radius: 16px 8px;
+  text-align: center;
+  font-family: "Volkorn", serif;
+  font-weight: 550;
+  font-size: 17px;
+}
+
+.content {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.dark {
+  background: linear-gradient(45deg, #230763 2%, #3479a7 98%);
+}
+
+.dark .perfil-foto {
+  box-shadow: 0px 4px 4px #182e47;
+}
+
+.dark .container {
+  background: #2f5c6e;
+}
+
+.dark .titulo {
+  color: #d9f4ff;
+}
+
+.dark .projetos {
+  background-color: #230763;
+  box-shadow: 0px 4px 4px #182e47;
+}
+
+.dark .titulo-projetos {
+  color: #b08cff;
+}
+
+.dark .collapsible {
+  background-color: #979699;
+  border-color: #b9abc7;
+}
+
+.dark a:link {
+  color: #b08cff;
+}
+
+.dark a:visited {
+  color: #b08cff;
+}
+
+.dark .tema button {
+  color: #b0e2f5;
+  background-color: #2f5c6e;
+  border-color: #b0e2f5;
+}
